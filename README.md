@@ -1,5 +1,5 @@
 # belajar-oauth-php
-ini adalah koleksi koding untuk belajar oauth dalam php programming
+Ini adalah koleksi koding untuk belajar oauth dalam php programming
 
 Berikut adalah provider/pembekal yang popular
 * github
