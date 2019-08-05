@@ -7,6 +7,11 @@ Berikut adalah provider/pembekal yang popular
 * google
 * twitter
 
+Pautan utama yang berkaitan
+* https://developers.facebook.com/docs/apps#register
+* https://developers.google.com/identity/protocols/OAuth2
+
+
 ___
 # Standard
 * http://www.php-fig.org/psr/psr-4/
