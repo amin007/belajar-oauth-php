@@ -9,6 +9,11 @@ Berikut adalah provider/pembekal yang popular
 
 Pautan utama yang berkaitan
 * https://developers.facebook.com/docs/apps#register
+* https://github.com/facebook/php-graph-sdk
+* https://developers.facebook.com/docs/facebook-login/web/
+* https://github.com/mkdynamic/omniauth-facebook
+* https://www.smashingmagazine.com/2017/05/oauth2-logging-in-facebook/
+* https://symfonycasts.com/screencast/oauth/facebook
 * https://developers.google.com/identity/protocols/OAuth2
 
 
