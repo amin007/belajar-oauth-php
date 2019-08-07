@@ -1,5 +1,7 @@
 <?php
 # include fail dari github dalam bentuk class
+include '../../i-tatarajah.php';# untuk capaian localhost
+$tajuk = Tajuk_Muka_Surat;
 include 'GithubLocal.php';# untuk capaian localhost
 //include 'GithubWeb.php';
 
@@ -13,7 +15,7 @@ include 'GithubLocal.php';# untuk capaian localhost
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Github Oauth-PHP</title>
+<title>Github Oauth-PHP(<?php echo $tajuk ?>)</title>
 <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet" type="text/css">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
