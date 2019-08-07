@@ -102,6 +102,8 @@ function apiRequest($url, $post=FALSE, $headers=array())
 
 	curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 	$response = curl_exec($ch);
+	//echo '<pre>$response:'; print_r($response); echo '</pre>';
+
 	return json_decode($response);
 }
 #------------------------------------------------------------------------------------------
