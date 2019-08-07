@@ -1,5 +1,5 @@
 <?php
-include 'GithubLocal.php';# untuk capaian localhost
+//include 'GithubLocal.php';# untuk capaian localhost
 //include 'GithubWeb.php';
 ?>
 <!doctype html>
@@ -74,7 +74,7 @@ table.excel tbody td
 		<i class="fab fa-github" style="font-size:50px"></i>
 	</div><!-- / class="p-3 mb-2 bg-transparent text-dark" -->
 	<div class="form-group">
-		<div class="btn btn-secondary btn-block text-white">Localhost - Login dari Github <i class="fab fa-github"></i></div>
+		<a href="ujilocal000/" class="btn btn-secondary btn-block text-white">Localhost - Login dari Github <i class="fab fa-github"></i></a>
 		<div class="btn btn-secondary btn-block text-white">Website - Login dari Github <i class="fab fa-github"></i></div>
 	</div><!-- / class="form-group" -->
 </form>
