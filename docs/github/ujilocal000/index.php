@@ -27,7 +27,6 @@ session_start();
 # 1. Start the login process by sending the user to Github's authorization page
 if(get('action') == 'login')
 {
-
 	# Generate a random hash and store in the session for security
 	$_SESSION['state'] = hash('sha256', microtime(TRUE).rand().$_SERVER['REMOTE_ADDR']);
 	unset($_SESSION['access_token']);
