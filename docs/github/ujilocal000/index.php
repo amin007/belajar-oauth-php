@@ -1,7 +1,7 @@
 <?php
 ###########################################################################################
 # include fail dari github dalam bentuk class
-include '../../../i-tatarajah.php';# untuk capaian localhost
+include '../../../tatarajah.php';# untuk capaian localhost
 include '../../../i-listfiles.php';# untuk header dan footer
 $tajuk = Tajuk_Muka_Surat;
 # kod rahsia untuk github oauth-php
