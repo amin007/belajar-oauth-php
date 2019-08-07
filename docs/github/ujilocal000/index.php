@@ -2,6 +2,7 @@
 ###########################################################################################
 # include fail dari github dalam bentuk class
 include '../../../i-tatarajah.php';# untuk capaian localhost
+include '../../../i-listfiles.php';# untuk header dan footer
 $tajuk = Tajuk_Muka_Surat;
 # kod rahsia untuk github oauth-php
 $clientID = ClientID;
@@ -11,6 +12,7 @@ $clientSecret = ClientSecret;
 //echo '<br>$clientSecret = ' . $clientSecret;
 ###########################################################################################
 
+diatas();
 #------------------------------------------------------------------------------------------
 // https://gist.github.com/aaronpk/3612742
 define('OAUTH2_CLIENT_ID', $clientID);
@@ -112,3 +114,4 @@ function session($key, $default=NULL)
 }
 #------------------------------------------------------------------------------------------
 ###########################################################################################
+dibawah();
