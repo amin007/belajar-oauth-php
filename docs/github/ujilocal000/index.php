@@ -12,7 +12,7 @@ $clientSecret = ClientSecret;
 //echo '<br>$clientSecret = ' . $clientSecret;
 ###########################################################################################
 
-diatas();
+diatas('Github Local 000');
 #------------------------------------------------------------------------------------------
 // https://gist.github.com/aaronpk/3612742
 define('OAUTH2_CLIENT_ID', $clientID);
