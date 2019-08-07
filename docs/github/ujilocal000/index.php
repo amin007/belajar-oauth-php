@@ -75,7 +75,9 @@ if(session('access_token'))
 
 	echo '<h3>Logged In</h3>';
 	echo '<h4>' . $user->name . '</h4>';
-	echo '<pre>'; print_r($user); echo '</pre>';
+	echo '<h4>' . $user->id . '</h4>';
+	echo '<img src="' . $user->avatar_url . '">';
+	//echo '<pre>'; print_r($user); echo '</pre>';
 }
 else
 {
@@ -99,7 +101,8 @@ function apiRequest($url, $post=FALSE, $headers=array())
 
 	$headers[] = 'Accept: application/json';
 
-	if(session('access_token')) {
+	if(session('access_token'))
+	{
 		$headers[] = 'Authorization: Bearer ' . session('access_token');
 	}
 
