@@ -24,7 +24,7 @@ $apiURLBase = 'https://api.github.com/';
 #------------------------------------------------------------------------------------------
 session_start();
 #------------------------------------------------------------------------------------------
-# Start the login process by sending the user to Github's authorization page
+# 1. Start the login process by sending the user to Github's authorization page
 if(get('action') == 'login')
 {
 	# Generate a random hash and store in the session for security
@@ -43,7 +43,7 @@ if(get('action') == 'login')
 	die();
 }
 #------------------------------------------------------------------------------------------
-# When Github redirects the user back here, there will be a "code" and "state"
+# 2. When Github redirects the user back here, there will be a "code" and "state"
 # parameter in the query string
 if(get('code'))
 {
