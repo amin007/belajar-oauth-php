@@ -8,6 +8,7 @@ Berikut adalah provider/pembekal yang popular
 * twitter
 
 Pautan utama yang berkaitan
+* https://www.opauth.org/
 * https://developers.facebook.com/docs/apps#register
 * https://github.com/facebook/php-graph-sdk
 * https://developers.facebook.com/docs/facebook-login/web/
