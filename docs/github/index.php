@@ -8,8 +8,8 @@ include 'GithubLocal.php';# untuk capaian localhost
 $clientID = ClientID;
 $clientSecret = ClientSecret;
 # semak data dulu
-echo '<br>$clientID = ' . $clientID;
-echo '<br>$clientSecret = ' . $clientSecret;
+//echo '<br>$clientID = ' . $clientID;
+//echo '<br>$clientSecret = ' . $clientSecret;
 ?>
 <!doctype html>
 <html lang="en">
