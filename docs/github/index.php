@@ -1,15 +1,6 @@
 <?php
-# include fail dari github dalam bentuk class
-include '../../i-tatarajah.php';# untuk capaian localhost
-$tajuk = Tajuk_Muka_Surat;
 include 'GithubLocal.php';# untuk capaian localhost
 //include 'GithubWeb.php';
-# kod rahsia untuk github oauth-php
-$clientID = ClientID;
-$clientSecret = ClientSecret;
-# semak data dulu
-//echo '<br>$clientID = ' . $clientID;
-//echo '<br>$clientSecret = ' . $clientSecret;
 ?>
 <!doctype html>
 <html lang="en">
