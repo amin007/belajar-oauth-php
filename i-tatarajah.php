@@ -82,6 +82,12 @@ else
 define('ClientID','abc123');
 define('ClientSecret','abddef123456');
 ############################################################################################
+# kod rahsia untuk facebook oauth-php
+define('JADUAL00', '***');
+define('FB_APP_ID', 'Insert_Facebook_App_ID');
+define('FB_APP_SECRET', 'Insert_Facebook_App_Secret');
+define('FB_REDIRECT_URL', 'Callback_URL');
+############################################################################################
 # buat tatasusunan ikut serialize
 define('KAKITANGAN', serialize(
 	array ('abu','bakar','umar','osman','ali','hasan')
