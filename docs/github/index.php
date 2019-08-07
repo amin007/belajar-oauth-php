@@ -74,6 +74,7 @@ table.excel tbody td
 <form>
 	<div class="p-3 mb-2 bg-transparent text-dark">
 		<i class="fa fa-bicycle" style="font-size:50px"></i>
+		<i class="fab fa-github" style="font-size:50px"></i>
 	</div><!-- / class="p-3 mb-2 bg-transparent text-dark" -->
 	<div class="form-group">
 		<div class="btn btn-secondary btn-block text-white">Localhost - Login dari Github <i class="fab fa-github"></i></div>
