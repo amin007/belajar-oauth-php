@@ -13,7 +13,7 @@ include 'GithubLocal.php';# untuk capaian localhost
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Folder Tentang Oauth-PHP</title>
+<title>Github Oauth-PHP</title>
 <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet" type="text/css">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
