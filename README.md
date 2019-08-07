@@ -15,6 +15,7 @@ Pautan utama yang berkaitan
 * https://github.com/mkdynamic/omniauth-facebook
 * https://www.smashingmagazine.com/2017/05/oauth2-logging-in-facebook/
 * https://symfonycasts.com/screencast/oauth/facebook
+* https://www.codexworld.com/login-with-facebook-using-php/
 * https://developers.google.com/identity/protocols/OAuth2
 
 
