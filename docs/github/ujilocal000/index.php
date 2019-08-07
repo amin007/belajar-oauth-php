@@ -7,8 +7,8 @@ $tajuk = Tajuk_Muka_Surat;
 $clientID = ClientID;
 $clientSecret = ClientSecret;
 # semak data dulu
-echo '<br>$clientID = ' . $clientID;
-echo '<br>$clientSecret = ' . $clientSecret;
+//echo '<br>$clientID = ' . $clientID;
+//echo '<br>$clientSecret = ' . $clientSecret;
 ###########################################################################################
 
 #------------------------------------------------------------------------------------------
