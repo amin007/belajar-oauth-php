@@ -78,6 +78,10 @@ else
 }
 //echo DB_HOST . "," . DB_USER . "," . DB_PASS . ",," . DB_NAME . "<br>";
 ############################################################################################
+# kod rahsia untuk github oauth-php
+define('ClientID','abc123');
+define('ClientSecret','abddef123456');
+############################################################################################
 # buat tatasusunan ikut serialize
 define('KAKITANGAN', serialize(
 	array ('abu','bakar','umar','osman','ali','hasan')
