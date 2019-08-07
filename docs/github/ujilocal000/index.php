@@ -68,6 +68,7 @@ if(get('code'))
 	header('Location: ' . $_SERVER['PHP_SELF']);
 }
 #------------------------------------------------------------------------------------------
+# 3. check if session valid or not
 if(session('access_token'))
 {
 	$user = apiRequest($apiURLBase . 'user');
