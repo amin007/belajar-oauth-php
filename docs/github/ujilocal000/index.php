@@ -1,7 +1,7 @@
 <?php
 ###########################################################################################
 # include fail dari github dalam bentuk class
-include '../../../tatarajah.php';# untuk capaian localhost
+include '../../../i-tatarajah.php';# untuk capaian localhost
 include '../../../i-listfiles.php';# untuk header dan footer
 $tajuk = Tajuk_Muka_Surat;
 # kod rahsia untuk github oauth-php
@@ -27,13 +27,13 @@ session_start();
 # 1. Start the login process by sending the user to Github's authorization page
 if(get('action') == 'login')
 {
+
 	# Generate a random hash and store in the session for security
 	$_SESSION['state'] = hash('sha256', microtime(TRUE).rand().$_SERVER['REMOTE_ADDR']);
 	unset($_SESSION['access_token']);
-
 	$params = array(
 		'client_id' => OAUTH2_CLIENT_ID,
-		'redirect_uri' => 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'],
+		'redirect_uri' => 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'],
 		'scope' => 'user',
 		'state' => $_SESSION['state']
 	);
@@ -58,12 +58,12 @@ if(get('code'))
 	$token = apiRequest($tokenURL, array(
 		'client_id' => OAUTH2_CLIENT_ID,
 		'client_secret' => OAUTH2_CLIENT_SECRET,
-		'redirect_uri' => 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'],
+		'redirect_uri' => 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'],
 		'state' => $_SESSION['state'],
 		'code' => get('code')
 	));
 
-	$_SESSION['access_token'] = $token->access_token;
+	// $_SESSION['access_token'] = $token->access_token;
 
 	header('Location: ' . $_SERVER['PHP_SELF']);
 }
@@ -90,15 +90,18 @@ else
 function apiRequest($url, $post=FALSE, $headers=array())
 {
 	$ch = curl_init($url);
+
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+	curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)');
 
 	if($post)
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
 
 	$headers[] = 'Accept: application/json';
 
-	if(session('access_token'))
+	if(session('access_token')) {
 		$headers[] = 'Authorization: Bearer ' . session('access_token');
+	}
 
 	curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 	$response = curl_exec($ch);
