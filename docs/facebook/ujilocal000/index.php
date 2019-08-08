@@ -2,6 +2,7 @@
 ###########################################################################################
 # include fail dari github dalam bentuk class
 include '../../../i-tatarajah.php';# untuk capaian localhost
+include '../../../../php-graph-sdk/src/Facebook/autoload.php';#
 //require_once 'config.php';# Include configuration file
 include '../../../i-listfiles.php';# untuk header dan footer
 $tajuk = Tajuk_Muka_Surat;
@@ -33,7 +34,7 @@ if(isset($accessToken))
 	$_SESSION['userData'] = $userData;# Storing user data in the session
 
 	# Get logout url
-	//$logoutURL = $helper->getLogoutUrl($accessToken, FB_REDIRECT_URL . 'logout.php');
+	$logoutURL = $helper->getLogoutUrl($accessToken, FB_REDIRECT_URL . 'logout.php');
 	# Render Facebook profile data
 	$output = paparFBUser($userdata,$logoutURL);
 }
@@ -41,8 +42,8 @@ else
 {
 	# Get login url
 	$permissions = ['email'];# Optional permissions
-	//$loginURL = $helper->getLoginUrl(FB_REDIRECT_URL, $permissions);
-	$loginURL = '?get=code';# contoh sahaja
+	$loginURL = $helper->getLoginUrl(FB_REDIRECT_URL, $permissions);
+	//$loginURL = '?get=code';# contoh sahaja
 
 	# Render Facebook login button
 	$output  = '<a href="' . htmlspecialchars($loginURL) . '"';
