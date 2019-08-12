@@ -6,6 +6,7 @@ Berikut adalah provider/pembekal yang popular
 * facebook
 * google
 * twitter
+* snapchat
 
 Pautan utama yang berkaitan
 * https://www.opauth.org/
@@ -17,6 +18,7 @@ Pautan utama yang berkaitan
 * https://symfonycasts.com/screencast/oauth/facebook
 * https://www.codexworld.com/login-with-facebook-using-php/
 * https://developers.google.com/identity/protocols/OAuth2
+* https://docs.snapchat.com/docs
 
 
 ___
