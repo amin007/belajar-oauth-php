@@ -34,7 +34,7 @@ if(get('action') == 'login')
 	unset($_SESSION['access_token']);
 	$params = array(
 		'client_id' => OAUTH2_CLIENT_ID,
-		'redirect_uri' => 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'],
+		'redirect_uri' => 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'],
 		'scope' => 'user',
 		'state' => $_SESSION['state']
 	);
