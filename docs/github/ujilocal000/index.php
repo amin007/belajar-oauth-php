@@ -64,7 +64,7 @@ if(get('code'))
 		'code' => get('code')
 	));
 
-	// $_SESSION['access_token'] = $token->access_token;
+	$_SESSION['access_token'] = $token->access_token;
 
 	header('Location: ' . $_SERVER['PHP_SELF']);
 }
@@ -93,7 +93,7 @@ else
 	echo '<p><a href="?action=login"'
 	. 'class="btn btn-secondary btn-block text-white">Log In Github '
 	. '<i class="fab fa-github"></i></a></p>';
-	semakSession();
+	//semakSession();
 }
 #------------------------------------------------------------------------------------------
 
