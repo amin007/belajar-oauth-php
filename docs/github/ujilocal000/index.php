@@ -93,6 +93,7 @@ else
 	echo '<p><a href="?action=login"'
 	. 'class="btn btn-secondary btn-block text-white">Log In Github '
 	. '<i class="fab fa-github"></i></a></p>';
+	semakSession();
 }
 #------------------------------------------------------------------------------------------
 
@@ -130,6 +131,11 @@ function get($key, $default=NULL)
 function session($key, $default=NULL)
 {
 	return array_key_exists($key, $_SESSION) ? $_SESSION[$key] : $default;
+}
+#------------------------------------------------------------------------------------------
+function semakSession()
+{
+	echo '<hr><p>'; print_r($_SESSION) . '</p>';
 }
 #------------------------------------------------------------------------------------------
 ###########################################################################################
