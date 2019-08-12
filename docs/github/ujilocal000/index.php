@@ -80,6 +80,13 @@ if(session('access_token'))
 	echo '<img src="' . $user->avatar_url . '">';
 	//echo '<pre>'; print_r($user); echo '</pre>';
 }
+elseif( get('error')=='redirect_uri_mismatch' )
+{
+	echo '<h2 class="bg-danger text-white">' . get('error') . '</h2>';
+	echo '<p>' . get('error_description') . '</p>';
+	echo '<p>' . get('error_uri') . '</p>';
+	echo '<p>' . get('state') . '</p>';
+}
 else
 {
 	echo '<h3>Not logged in</h3>';
