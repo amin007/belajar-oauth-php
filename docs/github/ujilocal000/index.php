@@ -93,7 +93,7 @@ else
 	echo '<p><a href="?action=login"'
 	. 'class="btn btn-secondary btn-block text-white">Log In Github '
 	. '<i class="fab fa-github"></i></a></p>';
-	//semakSession();
+	semakSession($apiURLBase);
 }
 #------------------------------------------------------------------------------------------
 
@@ -133,9 +133,11 @@ function session($key, $default=NULL)
 	return array_key_exists($key, $_SESSION) ? $_SESSION[$key] : $default;
 }
 #------------------------------------------------------------------------------------------
-function semakSession()
+function semakSession($apiURLBase)
 {
 	echo '<hr><p>'; print_r($_SESSION) . '</p>';
+	$user = apiRequest($apiURLBase . 'user');
+	echo '<h4>'; print_r($user) . '</h4>';
 }
 #------------------------------------------------------------------------------------------
 ###########################################################################################
