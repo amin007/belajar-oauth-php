@@ -7,12 +7,14 @@ $tajuk = Tajuk_Muka_Surat;
 # kod rahsia untuk github oauth-php
 $clientID = ClientID;
 $clientSecret = ClientSecret;
-# semak data dulu
-//echo '<br>$clientID = ' . $clientID;
-//echo '<br>$clientSecret = ' . $clientSecret;
-###########################################################################################
 
 diatas('Github Local 000');
+# semak data dulu
+echo '<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark text-white">'
+. '<span>$clientID = ' . $clientID
+. '|$clientSecret = ' . $clientSecret
+. '</span></nav>';
+###########################################################################################
 #------------------------------------------------------------------------------------------
 // https://gist.github.com/aaronpk/3612742
 define('OAUTH2_CLIENT_ID', $clientID);
