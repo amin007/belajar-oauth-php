@@ -75,7 +75,7 @@ class User
 #------------------------------------------------------------------------------------------
 	function sqlUpdate($userTbl,$userData)
 	{
-		return $query = ' UPDATE `' . $userTbl . '` SET'
+		return $sql = ' UPDATE `' . $userTbl . '` SET'
 		. "\r" . ' `first_name` = "' . $userData['first_name'] . '",'
 		. "\r" . ' `last_name` = "' . $userData['last_name'] . '",'
 		. "\r" . ' `email` = "' . $userData['email'] . '",'
@@ -83,13 +83,13 @@ class User
 		. "\r" . ' `picture` = "' . $userData['picture'] . '",'
 		. "\r" . ' `link` = "' . $userData['link'] . '",'
 		. "\r" . ' `modified` = NOW()'
-		. "\r" . ' WHERE oauth_provider = "' . $userData['oauth_provider'] . '"'
-		. "\r" . ' AND oauth_uid = "' . $userData['oauth_uid'] . '"';
+		. "\r" . ' WHERE `oauth_provider` = "' . $userData['oauth_provider'] . '"'
+		. "\r" . ' AND `oauth_uid` = "' . $userData['oauth_uid'] . '"';
 	}
 #------------------------------------------------------------------------------------------
 	function sqlInsert($userTbl,$userData)
 	{
-		return $query = 'INSERT INTO `' . $userTbl . '` SET'
+		return $sql = 'INSERT INTO `' . $userTbl . '` SET'
 		. "\r" . ' `oauth_provider` = "' . $userData['oauth_provider'] . '",'
 		. "\r" . ' `oauth_uid` = "' . $userData['oauth_uid'] . '",'
 		. "\r" . ' `first_name` = "' . $userData['first_name'] . '",'
