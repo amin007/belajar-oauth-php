@@ -56,21 +56,21 @@ class User
 #------------------------------------------------------------------------------------------
 	function sqlCreate($userTbl='users')
 	{
-		return $sql = 'CREATE TABLE `' . $userTbl . '` (' . "\r"
-		. ' `id` int(11) NOT NULL AUTO_INCREMENT,' . "\r"
-		. " `oauth_provider` enum('','facebook','google','twitter')"
-		. ' COLLATE utf8_unicode_ci NOT NULL,' . "\r"
-		. ' `oauth_uid` varchar(50) COLLATE utf8_unicode_ci NOT NULL,' . "\r"
-		. ' `first_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL,' . "\r"
-		. ' `last_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL,' . "\r"
-		. ' `email` varchar(25) COLLATE utf8_unicode_ci NOT NULL,' . "\r"
-		. ' `gender` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,' . "\r"
-		. ' `picture` varchar(200) COLLATE utf8_unicode_ci NOT NULL,' . "\r"
-		. ' `link` varchar(100) COLLATE utf8_unicode_ci NOT NULL,' . "\r"
-		. ' `created` datetime NOT NULL,' . "\r"
-		. ' `modified` datetime NOT NULL,' . "\r"
-		. ' PRIMARY KEY (`id`)' . "\r"
-		. ' ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;';
+		return $sql = 'CREATE TABLE `' . $userTbl . '` ('
+		. "\r" . ' `id` int(11) NOT NULL AUTO_INCREMENT,'
+		. "\r" . " `oauth_provider` enum('','facebook','google','twitter')"
+		. ' COLLATE utf8_unicode_ci NOT NULL,'
+		. "\r" . ' `oauth_uid` varchar(50) COLLATE utf8_unicode_ci NOT NULL,'
+		. "\r" . ' `first_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL,'
+		. "\r" . ' `last_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL,'
+		. "\r" . ' `email` varchar(25) COLLATE utf8_unicode_ci NOT NULL,'
+		. "\r" . ' `gender` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,'
+		. "\r" . ' `picture` varchar(200) COLLATE utf8_unicode_ci NOT NULL,'
+		. "\r" . ' `link` varchar(100) COLLATE utf8_unicode_ci NOT NULL,'
+		. "\r" . ' `created` datetime NOT NULL,'
+		. "\r" . ' `modified` datetime NOT NULL,'
+		. "\r" . ' PRIMARY KEY (`id`)'
+		. "\r" . ' ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;';
 	}
 #------------------------------------------------------------------------------------------
 	function sqlUpdate($userTbl,$userData)
